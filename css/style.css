@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, Andale Mono, monospace, impact, fantasy, sans-serif;
+}
+
+.content .row .navbar{
+    background-color: #70bce1;
+    width: 100%;
+    height: 70px;
+}
+
+.content .row .navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-evenly;
+    position: center;
+}
+
+.content .row .navbar .logo{
+    font-size: 35px;
+}
+
+.content .row .navbar .logo a{
+    color:red;
+    margin-right: 300px;
+}
+
+.content .row .navbar .logo a:hover{
+    color: red;
+}
+
+.content .row .navbar ul li{
+    font-size: 20px;
+    margin-right: 20px;
+    
+}
+
+.content .row .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.content .row .navbar ul li a:hover{
+    color:aquamarine;
+}
+
+
+.content .row .navbar ul li select{
+    background-color: #70bce1;
+    text-transform: uppercase;
+}
+
+.content .row .navbar ul li select:hover{
+    color: aquamarine;
+}
+
+
+.content .row .navbar ul li select option{
+    color: aquamarine;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.content .row .navbar ul li select option a{
+    text-decoration: none;
+    color: black;
+}
+
+/********************    fin du menu =***************************/
+
+.home{
+    background-color: whitesmoke;
+    width: 100%;
+}
+.home .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 0.3fr;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    grid-template-areas: 
+    "search search search search"
+    "view view view features"
+    "view view view features"
+    "footer footer footer footer"
+}
+
+.home .container .search{
+    grid-area: search;
+    border-bottom: 2px solid black;
+}
+
+.home .container .view{
+    grid-area: view;
+    margin-right: 10px;
+}
+
+.home .container .features{
+    grid-area: features;
+    border-left: 2px solid black;
+    background-color: #eeeeee;
+    margin-left: 5px;
+}
+
+
+
+/* footer ***********/
+
+.home .container .footer{
+    grid-area: footer;
+    border-top: 2px solid black;
+}
+
+.home .container .footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "profile menu reseau"
+    "profile menu reseau"
+    "profile menu reseau"
+    ;
+}
+
+.home .container .footer .container .menu{
+    grid-area:menu;
+    color:blue;
+}
+
+.home .container .footer .container .profile{
+    grid-area : profile;
+}
+
+.home .container .footer .container .reseau{
+    grid-area: reseau;
+    color:green;
+}
+
+
+.home .container .footer .container .menu .navbar .logo{
+    font-size: 45px;
+    position: center;
+}
+
+.home .container .footer .container .menu .navbar .logo a{
+    color:red;
+}
+
+.home .container .footer .container .menu .navbar ul{
+    list-style: none;
+    align-items: center;
+    font-weight: bold;
+    position: center;
+}
+
+.home .container .footer .container .menu .navbar ul li{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.home .container .footer .container .menu .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width : 700px){
+    .home .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 6fr 1fr 0.2fr;
+        grid-template-areas:
+        "search"
+        "view"
+        "features"
+        "footer" 
+        ;
+    }
+}

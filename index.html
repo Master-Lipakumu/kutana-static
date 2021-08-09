@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>KUTANA</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+        <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+
+    </head>
+    <body>
+        <div class="content">
+            <div class="row">
+                <div class="navbar">
+                    <ul>
+                        <li class="logo"><a href="#">KUTANA</a></li>
+                        <li><a href="#">Acceuil</a></li>
+                        <li><select name="tchat" id="usertchat">
+                            <option value="messages"><a href="#">messages</a></option>
+                            <option value="Noctification"><a href="#">Noctifications</a></option>
+                            </select>
+                        </li>
+                        <li><select name="infos" id="userinfos">
+                            <option value="profile"><a href="#">Profile</a></option>
+                            <option value="infos"><a href="#">Informations</a></option>
+                            </select>
+                        </li>
+                        <li><a href="#">Déconnexion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="home">
+            <div class="container">
+                <!--bar de recherche -->
+                <div class="search">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                            <form class="d-flex w-100 p-2">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">recherche</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+
+                <!--zone de vue des cards profils-->
+                <div class="view">
+
+                    <br>
+                    <center>
+
+                      <h2 style="border-bottom: 2px solid black;">vous apprecirez peut-etre</h2>
+
+                      <br>
+
+                    </center>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card" style="background-color:#eeeeee;border:none;">
+                            <img src="img/love.jpg" class="card-img-top " alt="..." style="max-height: 250px;height: 250px; width:250px; border-radius:100%;">
+                            <div class="card-body">
+
+                              <center>
+
+                                <h5 class="card-title">Card title</h5>
+
+                                <p> <a href="#" style="color:red;font-size: 35px;"><i class="fas fa-heart"></i></a>  ou  <a href="#" style="color:skyblue;font-size: 35px;"> <i class="fas fa-user-minus"></i> </a></p>
+
+                                <p class="card-text">Cherche : </p>
+
+                                <a href="#" style="color:yellowgreen;font-size: 35px;"><i class="far fa-envelope"></i></a>
+
+                              </center>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="img/default.jpg" class="card-img-top" alt="..." style="max-height: 250px;height: 250px; width:250px; border-radius:100%;">
+                            <div class="card-body">
+                              <center>
+                                <h5 class="card-title">Card title</h5>
+                                <p> <a href="#" style="color:red;font-size: 35px;"><i class="fas fa-heart"></i></a>  ou  <a href="#" style="color:skyblue;font-size: 35px;"> <i class="fas fa-user-minus"></i> </a></p>
+                                <p class="card-text">Cherche : </p>
+                                <a href="#" style="color:yellowgreen;font-size: 35px;"><i class="far fa-envelope"></i></a>
+                              </center>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="img/carrousel (1).jpg" class="card-img-top" alt="..." style="max-height: 250px;height: 250px; width:250px; border-radius:100%;">
+                            <div class="card-body">
+                              <center>
+                                <h5 class="card-title">Card title</h5>
+                                <p> <a href="#" style="color:red;font-size: 35px;"><i class="fas fa-heart"></i></a>  ou  <a href="#" style="color:skyblue;font-size: 35px;"> <i class="fas fa-user-minus"></i> </a></p>
+                                <p class="card-text">Cherche : </p>
+                                <a href="#" style="color:yellowgreen;font-size: 35px;"><i class="far fa-envelope"></i></a>
+                              </center>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="img/carrousel (2).jpg" class="card-img-top" alt="..." style="max-height: 250px;height: 250px; width:250px; border-radius:100%;">
+                            <div class="card-body">
+                              <center>
+                                <h5 class="card-title">Card title</h5>
+                                <p> <a href="#" style="color:red;font-size: 35px;"><i class="fas fa-heart"></i></a>  ou  <a href="#" style="color:skyblue;font-size: 35px;"> <i class="fas fa-user-minus"></i> </a></p>
+                                <p class="card-text">Cherche : </p>
+                                <a href="#" style="color:yellowgreen;font-size: 35px;"><i class="far fa-envelope"></i></a>
+                              </center>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- paginator -->
+                    <br>
+
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--zone de contenue des preferences et j'aime -->
+                <div class="features"><br>
+                  <center>
+                    <div class="pf">
+                      <div class="col col-md-3 col-6 col-xl-3">
+                        <div class="card">
+                          <img src="img/carrousel (2).jpg" class="card-img-top" alt="..." style="max-height: 100px;height: 100px; width:100px; border-radius:100%;">
+                        </div>  
+                      </div>
+
+                      <h2>Username</h2>
+
+                      <div class="sms">
+
+                        <a href="#" style="color:skyblue;font-size: 35px;"><i class="far fa-bell"></i></a>
+                        <a href="#" style="color:yellowgreen;font-size: 35px;"><i class="far fa-envelope"></i></a>
+
+                      </div>
+                      
+                      
+                    </div>
+                  </center>
+                    <div class="card">
+                        <h5 class="card-header">Vous avez appreciez :</h5>
+                        <div class="card-body">
+                          <h5 class="card-title">envoyer leur un message</h5>
+                          <p class="card-text">liste users name</p>
+                          <a href="#" class="btn btn-success">en voir plus </a>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <h5 class="card-header">Dernier personne contacter :</h5>
+                        <div class="card-body">
+                          <h5 class="card-title">envoyer leur un message</h5>
+                          <p class="card-text">liste users name</p>
+                          <a href="#" class="btn btn-success">en voir plus </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--footer-->
+                <div class="footer">
+                    <div class="container">
+                        <div class="menu">
+                            <div class="navbar">
+                                <ul>
+                                    <li class="logo"><a href="#">KUTANA</a></li>
+                                    <li><a href="#">messages</a></li>
+                                    <li><a href="#">Noctifications</a></li>
+                                    <li><a href="#">Déconnexion</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="profile"> <br>
+                          <h2>Username</h2>
+                            <p>sexe : </p>
+                            <p>cherche : </p>
+                            <p>rubrique : </p>
+                        </div>
+                        <div class="reseau">
+
+                          <br>
+
+                          <h2>Réseau</h2>
+
+                          <br>
+
+                          <a href="#" style="font-size: 35px;"><i class="fab fa-github"></i></a>
+                          
+                          <a href="#" style="font-size: 35px;"><i class="fab fa-linkedin"></i></a>
+
+                          <a href="#" style="font-size: 35px;"><i class="fab fa-facebook"></i></a>
+
+                          <a href="#" style="font-size: 35px;"><i class="fab fa-twitter"></i></a>
+
+                          <a href="#" style="font-size: 35px;"><i class="fas fa-hashtag"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
